@@ -176,6 +176,9 @@ body {
     min-width: 320px;
   }
 }
+#nav {
+  max-width: 91% !important;
+}
 
 html {
   box-sizing: border-box;
@@ -253,6 +256,10 @@ textarea {
   select,
   textarea {
     font-size: 11pt;
+  }
+
+  #nav {
+    max-width: 100% !important;
   }
 }
 

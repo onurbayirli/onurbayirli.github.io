@@ -1,140 +1,126 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Onur's Website</title>
-	<link rel="shortcut icon" type="image/jpg" href="images/icon.png">
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./static/css/styles.css">
 </head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#projects-section">Projects</a>
+            </li>
+        </ul>
+    </nav>
 
-<body class="is-preload">
-	<div class="article-metadata">. </div>
-	<!-- Wrapper -->
-	<div id="wrapper">
+    <div class="container mx-auto my-5" id="about-me">
+        <div class="jumbotron">
+            <div class="card mb-3" style="max-width: 100%;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="./static/images/profile.png" class="img-fluid rounded-start" alt="onur_image">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h1 class="card-title">Onur Bayırlı</h1>
+                      <h5>Full Stack Web Developer</h5>
+                      <br>
+                      <p class="card-text">
+                          I'm full stack web developer (especially backend). I'm also interested in 
+                          cyber security and ethical hacking (getting root permissions in easy machines 
+                          on vulnhub easily). As a result of my interest, I improved myself in
+                          web development and cyber security in a relatively short period of time. 
+                          Because of more than two years of experience, I use Linux OS well and develop 
+                          web apps rapidly with Django web framework of python programming language. 
+                      </p>
+                      <div class="cv-button-div">
+                        <button class="btn btn-secondary" id="cv-button"><a href="./static/cv_current.pdf" download="CurrentCV" id="cv-link">Download CV</a></button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<!-- Header -->
-		<header id="header" class="alt">
-			<span class="logo"><img src="images/icon.png" alt="" /></span>
-		</header>
+    <section id="skills">
+        <div class="container">
+            <div class="row">
+                <h2 class="section-title">Skills</h2>
+                <p>My abilities can be divided into three parts</p>
+            </div>
 
-		<!-- Nav -->
-		<nav id="nav">
-			<ul>
-				<li><a href="#intro" class="active">About Me</a></li>
-				<li><a href="#first">Certificates</a></li>
-			</ul>
-		</nav>
+            <div class="row">
+                <div class="icon-box col-3">
+                    <object data="./static/images/code-tags.svg" width="50" height="50"></object>
+                    <h3>Frontend Development</h3>
+                    <p>Using HTML, CSS, Javascript. Currently learning ReactJS</p>
+                </div>
+                <div class="icon-box col-3">
+                    <object data="./static/images/cog.svg" width="50" height="50"></object>
+                    <h3>Backend Development</h3>
+                    <p>Using Python programming language, especially Django + REST Framework</p>
+                </div>
+                <div class="icon-box col-3">
+                    <object data="./static/images/key.svg" width="50" height="50"></object>
+                    <h3>Security</h3>
+                    <p>Using Kali Linux to see vulnerabilities and make the web application secure</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-		<!-- Main -->
-		<div id="main">
+    <section class="projects" id="projects-section">
+    <h2 style="text-align: center; margin: 24px;">Projects</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./static/images/psikonline.png" class="card-img-top" alt="psikonline-image">
+            <div class="card-body">
+              <h5 class="card-title"><a href="http://onurbyrl.pythonanywhere.com/" target="_blank">Psikonline</a></h5>
+              <p class="card-text">Psikonline is the web app that allows clients to text their psychologists.
+                  Clients's messages drop to admin panel and psychologists see it easily.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="./static/images/OSman.png" class="card-img-top" alt="OSmanbot-image">
+            <div class="card-body">
+              <h5 class="card-title">OSman BOT</h5>
+              <p class="card-text">OSman is the instagram bot that show you the urls of users who do not following you back.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+    </section>
+    
+    <br><br>
+    <footer class="text-center text-white" style="background-color:#000000;" id="footer-contact">
+        <div class="container p-4">
+            <section class="mb-4">
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-primary btn-floating m-1" style="background-color: #333333" href="#!" role="button"><i class="fab fa-github"></i></a>
+                <button class="btn btn-secondary" id="cv-button"><a href="./static/cv_current.pdf" download="CurrentCV" id="cv-link">Download CV</a></button>
+            </section>
+            <section class="mb-4">
+                <p>
+                    onurbayirli17@gmail.com | <script>document.write(new Date().getFullYear());</script>
+                </p>
+            </section>
+        </div>
+    </footer>
 
-			<!-- Introduction -->
-			<section id="intro" class="main">
-				<div class="spotlight">
-					<div class="content">
-						<header class="major">
-							<h2>Onur BAYIRLI</h2>
-						</header>
-						<p>I'm a School of Psychology student at Uludag University.
-							Also a developer, web designer, science-lover and writer.
-						</p>
-						<ul class="actions">
-							<li><a href="#footer" class="button">Contact</a></li>
-						</ul>
-					</div>
-					<span class="image"><img src="images/me.jpeg" alt="" /></span>
-				</div>
-			</section>
-
-			<!-- First Section -->
-			<section id="first" class="main special">
-				<header class="major">
-					<h2>My Certificates</h2>
-				</header>
-				<p>Introduction to Information Technologies Certificate given by BTK Academy</p>
-            			<p>HTML5 and CSS3 Certificate given by Istanbul Business Institute</p>
-				<p>C# Certificate given by Istanbul Business Institute</p>
-				<p>Python Certificate given by Istanbul Business Institute</p>
-
-				<p>Human Resources Management Certificate given by Istanbul Business Institute</p>
-
-				<p>SEO Certificate given by Istanbul Business Institute</p>
-
-				<p>C1-C2 English Language Certificate given by Istanbul Business Institute</p>
-
-				<p>High Honour Certificate from Cyprus International University</p>
-
-				<p>Efficient Use of Communication & Communication Strategies in Business Life Certificate given by
-					ADA
-					egitim&akademi</p>
-
-				<p>Human Resources Management & Recruitment Processes Certificate given by ADA egitim&akademi</p>
-
-				<p>Relationship Therapy You-Me-It Certificate given by ADA egitim&akademi</p>
-
-				<footer class="major">
-				</footer>
-			</section>
-
-
-
-		</div>
-
-		<!-- Footer -->
-		<footer id="footer">
-			<section>
-				<h2>My Blog</h2>
-				<p>You can see my blog by clicking the button below</p>
-				<ul class="actions">
-					<li><a href="https://onurbbayirli.blogspot.com/" class="button">Blog</a></li>
-				</ul>
-			</section>
-			<section>
-				<h2>Contact Me</h2>
-				<dl class="alt">
-					<dt>Phone</dt>
-					<dd>+ 90 (536) 230-2496</dd>
-					<dt>Email</dt>
-					<dd><a href="mailto:onurbayirli17@gmail.com">onurbayirli17@gmail.com</a></dd>
-				</dl>
-				<ul class="icons">
-					<li><a href="https://twitter.com/onurbayirli17" target="_blank" class="icon brands fa-twitter alt"><span
-								class="label">Twitter</span></a></li>
-					<li><a href="https://www.facebook.com/onurbayirli17/" target="_blank" class="icon brands fa-facebook-f alt"><span
-								class="label">Facebook</span></a></li>
-					<li><a href="https://www.instagram.com/onurbayirli17/" target="_blank" class="icon brands fa-instagram alt"><span
-								class="label">Instagram</span></a></li>
-					<li><a href="https://github.com/onurbyrl" target="_blank" class="icon brands fa-github alt"><span
-								class="label">GitHub</span></a></li>
-					<li><a href="https://www.reddit.com/user/Launderette06" target="_blank" class="icon brands fa-reddit alt"><span
-								class="label">Reddit</span></a></li>
-					<li><a href="https://www.linkedin.com/in/onur-bay%C4%B1rl%C4%B1-64933a15a/"
-							target="_blank" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
-				</ul>
-			</section>
-			<p class="copyright">Onur Bayırlı &copy; Design: <a href="#">HTML5 UP</a>.</p>
-		</footer>
-
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
-
 </html>
